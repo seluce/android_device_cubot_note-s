@@ -147,11 +147,7 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
 	gps.mt6580
-
-# EngineerMode
-PRODUCT_PACKAGES += \
-   EngineerMode
-
+	
 # YGPS
 PRODUCT_PACKAGES += \
     YGPS	
