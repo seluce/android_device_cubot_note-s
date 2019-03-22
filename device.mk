@@ -168,15 +168,11 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml \
-	
+
 # MiraVision
 PRODUCT_PACKAGES += \
     MiraVision
-	
-# EngineerMode
-PRODUCT_PACKAGES += \
-    EngineerMode
- 	
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.secure=0 \
