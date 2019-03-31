@@ -29,7 +29,7 @@ LOCAL_SHARED_LIBRARIES := \
     libui \
     libdl \
     libion \
-    libion_mtk \
+#   libion_mtk \
     libgralloc_extra
 
 # for bring up, please unmark this line
