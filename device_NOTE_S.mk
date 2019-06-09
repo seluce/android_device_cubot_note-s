@@ -99,6 +99,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/twrp.fstab:recovery/root/etc/twrp.fstab \
     $(LOCAL_PATH)/rootdir/root/ueventd.mt6580.rc:root/ueventd.mt6580.rc \
     $(LOCAL_PATH)/rootdir/root/init.project.rc:root/init.project.rc \
+    $(LOCAL_PATH)/rootdir/root/init.mt6580.power.rc:root/init.mt6580.power.rc \
     $(LOCAL_KERNEL):kernel
 
 # Permissions
@@ -151,6 +152,10 @@ PRODUCT_PACKAGES += \
 # MiraVision
 PRODUCT_PACKAGES += \
 	MiraVision
+	
+# Power
+PRODUCT_PACKAGES += \
+    power.mt6580
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
