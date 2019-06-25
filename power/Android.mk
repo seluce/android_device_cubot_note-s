@@ -1,4 +1,5 @@
-# Copyright (C) 2011 The Android Open Source Project
+#
+# Copyright 2016 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,28 +12,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH:= $(call my-dir)
+
 include $(CLEAR_VARS)
-
-LOCAL_STATIC_LIBRARIES += power-feature
-
-LOCAL_MODULE := power.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_PROPRIETARY_MODULE:=true
 LOCAL_SRC_FILES := power.c
-LOCAL_SHARED_LIBRARIES := liblog libcutils libdl
+LOCAL_SHARED_LIBRARIES := liblog libcutils
 LOCAL_MODULE_TAGS := optional
-
+LOCAL_MODULE := power.$(TARGET_BOARD_PLATFORM)
 include $(BUILD_SHARED_LIBRARY)
-
-# power feature
-include $(CLEAR_VARS)
-
-LOCAL_SRC_FILES := \
-    power-feature.c
-
-LOCAL_MODULE := power-feature
-LOCAL_MODULE_TAGS := optional
-
-include $(BUILD_STATIC_LIBRARY)

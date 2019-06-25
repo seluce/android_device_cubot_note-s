@@ -99,7 +99,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/twrp.fstab:recovery/root/etc/twrp.fstab \
     $(LOCAL_PATH)/rootdir/root/ueventd.mt6580.rc:root/ueventd.mt6580.rc \
     $(LOCAL_PATH)/rootdir/root/init.project.rc:root/init.project.rc \
-    $(LOCAL_PATH)/rootdir/root/init.mt6580.power.rc:root/init.mt6580.power.rc \
     $(LOCAL_KERNEL):kernel
 
 # Permissions
