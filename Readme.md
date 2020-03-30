@@ -1,4 +1,4 @@
-Cubot Note S 
+Cubot Note S
 ===========
 Device Tree for LineageOS 14.1
 ------------------
