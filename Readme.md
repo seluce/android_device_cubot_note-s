@@ -31,7 +31,7 @@ export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -X
 
 export LC_ALL=C
 
-brunch Rainbow
+brunch NOTE_S
 ```
 
 Result
